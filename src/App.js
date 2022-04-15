@@ -1,10 +1,11 @@
 import React from 'react';
+import MainDesk from './components/MainDesk/MainDesk';
 import './App.scss';
 
 function App() {
   return (
-    <main>
-
+    <main className='main'>
+      <MainDesk/>
     </main>
   );
 }
