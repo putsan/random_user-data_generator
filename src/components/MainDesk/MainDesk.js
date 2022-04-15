@@ -8,6 +8,9 @@ const MainDesk = () => {
     <div className="main-desk">
       <WiredCard elevation={3}>
         <UserCard />
+      </WiredCard>
+
+      <WiredCard elevation={3}>
         <DataSettings />
       </WiredCard>
     </div>
