@@ -1,17 +1,26 @@
+import { useState } from "react";
 import { WiredCard } from "wired-elements-react/lib/WiredCard";
 import { DataSettings } from "../DataSettings";
 import { UserCard } from "../UserCard";
 import "./MainDesk.scss";
 
+const defaultUserData = {
+  fullName: 'Full Name',
+  nickname: 'nickname',
+  mail: 'mail@mail.com',
+};
+
 const MainDesk = () => {
+  const [userData, setUserData] = useState(defaultUserData);
+
   return (
     <div className="main-desk">
       <WiredCard elevation={3}>
-        <UserCard />
+        <UserCard {...userData}/>
       </WiredCard>
 
       <WiredCard elevation={3}>
-        <DataSettings />
+        <DataSettings changeUserData={setUserData}/>
       </WiredCard>
     </div>
   );
