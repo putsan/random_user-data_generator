@@ -11,6 +11,8 @@ const defaultUserData = {
   email: 'mail@mail.com',
 };
 
+const activeFields = ['picture', 'fullName', 'nickname', 'email'];
+
 const MainDesk = () => {
   const [userData, setUserData] = useState(defaultUserData);
 
