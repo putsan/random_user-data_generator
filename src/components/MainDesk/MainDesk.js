@@ -5,9 +5,10 @@ import { UserCard } from "../UserCard";
 import "./MainDesk.scss";
 
 const defaultUserData = {
+  picture: 'https://i.pravatar.cc/150?img=48',
   fullName: 'Full Name',
   nickname: 'nickname',
-  mail: 'mail@mail.com',
+  email: 'mail@mail.com',
 };
 
 const MainDesk = () => {
