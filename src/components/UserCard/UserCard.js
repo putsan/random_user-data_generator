@@ -5,13 +5,13 @@ import "./UserCard.scss";
 
 export const UserCard = ({ email, nickname, fullName, picture }) => {
   return (
-    <div className="user-card">
-      <WiredImage src={picture} />
-      <div>
-        <p>Nickname: <span>{fullName}</span></p>
-        <p>Full name: <span>{nickname}</span></p>
-        <p>E-Mail: <span>{email}</span></p>
-      </div>
+    <div className="user">
+      <WiredImage className="wired-rendered user__picture" src={picture} elevation={5}/>
+      <ul className="user__details">
+        <li><b>Nickname:</b> <span>{nickname}</span></li>
+        <li><b>Full name:</b> <span>{fullName}</span></li>
+        <li><b>E-Mail:</b> <span>{email}</span></li>
+      </ul>
     </div>
   )
 };

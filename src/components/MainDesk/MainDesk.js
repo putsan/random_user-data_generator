@@ -17,7 +17,7 @@ const MainDesk = () => {
   return (
     <div className="main-desk">
       <WiredCard elevation={3}>
-        <UserCard {...userData}/>
+        <UserCard { ...userData }/>
       </WiredCard>
 
       <WiredCard elevation={3}>

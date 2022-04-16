@@ -1,0 +1,9 @@
+@mixin size($x, $y: $x) {
+  width: $x;
+  height: $y;
+}
+
+@mixin min-size($x, $y: $x) {
+  min-width: $x;
+  min-height: $y;
+}

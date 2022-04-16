@@ -1,2 +1,22 @@
-wired-image {
+@import '../../assets/styles/index.scss';
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 8px 25px;
+
+  &__picture {
+    @include min-size(125px);
+    margin-bottom: 20px;
+  }
+
+  &__details {
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
 }

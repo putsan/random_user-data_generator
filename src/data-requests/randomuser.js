@@ -20,7 +20,7 @@ export const getUser = async (setData) => {
   console.log(16, response);
   const userData = response.data.results[0];
   setData({
-    picture: userData.picture.medium,
+    picture: userData.picture.large,
     fullName: `${userData.name.first} ${userData.name.last}`,
     nickname: userData.login.username,
     email: userData.email,
